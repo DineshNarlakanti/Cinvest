@@ -1,0 +1,152 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.search-bar {
+    width: 200px;
+    padding: 5px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-symbol {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Navigation Bar Styles */
+.navigation-bar {
+    background-color: #444;
+    padding: 10px;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation-bar li {
+    margin-right: 20px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Trending and New Sections Styles */
+.trending-section,
+.new-section {
+    margin-bottom: 30px;
+}
+
+.trending-content,
+.new-content {
+    display: flex;
+}
+
+.trending-item,
+.new-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Projects Table Styles */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.projects-table th,
+.projects-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-poster {
+    width: 80px;
+    height: auto;
+}
+
+/* Clearfix for flex container */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Movie Details Styles */
+.movie-details {
+    display: flex;
+    align-items: center;
+}
+
+.movie-poster {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.movie-info {
+    flex-grow: 1;
+}
+
+/* Investment Bar Styles */
+.investment-bar {
+    margin-top: 20px;
+}
+
+.money-raised {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 0.5s ease;
+}
